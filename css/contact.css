@@ -100,12 +100,10 @@ section{
     border-radius: 80px 5px 80px 5px;
     display: block;
     text-align: center;
-    /* height: 200px; */
-    /* margin: 5%;
-    padding: 5%; */
+    justify-self: center;
     margin-bottom: 5%;
+    width: 80%;
     padding-bottom: 5%;
-    /* align-items: center; */
 }
 section h3{
     color: var(--color-text-petit);
