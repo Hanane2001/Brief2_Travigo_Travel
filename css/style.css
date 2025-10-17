@@ -1,0 +1,380 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+body{
+    background-image: url(/img/Decore.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-size: 40%;
+}
+
+:root{
+    --second-color: black;
+    --color-Contact: #CB6C58;
+    --color-Cercle: #D5AEE4;
+    --color-text: #181E4B;
+    --color-text-petit: #5E6282;
+    --bg-color: white;
+    --color-back: #fff1da;
+}
+/* -------------------------Header------------------------- */
+header{
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-decoration: none;
+    margin: 2%;
+}
+
+nav div ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+nav div ul .sign{
+    border: 1px solid var(--second-color);
+    border-radius: 5px;
+    padding: 0 1% 0 1%;
+}
+
+header div ul li a{
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+header div ul li select{
+    background-color: var(--color-back);
+    border: 1px solid var(--color-back);
+    outline: none;
+}
+
+header div ul li select option{
+    background-color: var(--color-back);
+    border: 1px solid var(--color-back);
+
+}
+
+/* -------------------------Main------------------------- */
+main{
+    margin-top: 5%;
+    margin: 2%;
+    background-image: url(/img/Traveller\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position-x: 85%;
+    height: 500px;
+}
+
+section{
+    display: flex;
+    position: relative;
+}
+section div{
+    flex: 1;
+}
+
+#Top-Plane{
+    position: absolute;
+    left: 60%;
+}
+
+#Bottom-Plane{
+    position: absolute;
+    top: 10%;
+    left: 85%;
+}
+.container{
+    display: block;
+}
+.container h4{
+    color: var(--color-Contact);
+    font-size: 1.2em;
+}
+
+.container h1{
+    color: var(--color-text);
+    font-size: 3.5em;
+}
+
+.line{
+    border-bottom: 5px solid var(--color-Contact);/*rgba(203, 108, 88, 0.8)*/
+}
+
+.container p{
+    color: var(--color-text-petit);
+}
+
+.btn{
+    display: flex;
+}
+
+.btn input{
+    margin-top: 20%;
+    border-radius: 10px;
+    height: 35px;
+    padding: 5%;
+    background-color: var(--color-Contact);
+    border: 1px solid var(--color-Contact);
+    color: var(--bg-color);
+    cursor: pointer;
+}
+
+.btn input:hover{
+    background-color: var(--bg-color);
+    color: var(--color-Contact);
+}
+
+.btn img{
+    width: 60%;
+    height: 70%; 
+    margin-left: 55%;   
+    margin-top: 12%;
+}
+
+#btn-img{
+    background-color: var(--bg-color);
+    color: var(--color-text-petit);
+    border: 1px solid var(--bg-color);
+}
+
+#btn-img:hover{
+    background-color: var(--color-Contact);
+    color: var(--bg-color);
+    border: 1px solid var(--color-Contact);
+}
+
+/* -------------------------Section------------------------- */
+#section{
+    display: block;
+    text-align: center;
+    line-height: 48px;
+    height: 600px;
+}
+.container-section h3{
+    color: var(--color-text-petit);
+}
+
+.container-section h1{
+    color: var(--color-text);
+}
+
+.four-card{
+ display: flex;
+ margin-top: 2%;
+ justify-content: space-evenly;
+}
+
+.four-card p{
+    line-height: 25px;
+    color: var(--color-text-petit);
+}
+
+.four-card .card:nth-child(2){
+    background-color: var(--bg-color);
+    border-radius: 7px;
+    border: none;
+    box-shadow: 5px 5px 50px grey;
+    /* z-index: -1000; */
+}
+
+.four-card .card{
+    padding: 3%;
+    margin: 3%;
+    position: relative;
+}
+
+.card-img{
+    position: relative;
+    z-index: 9991;
+}
+.card-img .rectangle{
+    background-color: var(--color-back);
+    position: absolute;
+    width: 20%;
+    height: 40px;
+    z-index: -1001;
+    left: 50%;
+    bottom: 10%;
+    border-radius: 6px 0 6px 0;
+}
+
+.rectangle-nt{
+    background-color: var(--color-Contact);
+    position: absolute;
+    width: 30%;
+    height: 20%;
+    bottom: -10%;
+    left: -10%;
+    z-index: -999999;
+    border-radius: 20px 20px 6px 0;
+}
+.card-imgs{
+    position: relative;
+    z-index: 199;
+}
+
+.card-imgs .rectangle{
+    background-color: var(--color-back);
+    position: absolute;
+    width: 20%;
+    height: 40px;
+    z-index: -1;
+    left: 55%;
+    border-radius: 6px 0 6px 0;
+}
+
+.card h2{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* -------------------------Footer------------------------- */
+footer{
+    display: block;
+    text-align: left;
+    line-height: 38px;
+    background-image: url(/img/Ellipse\ 10.png);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: right;
+    background-position-x: 107%;
+    background-position-y: -20%;
+}
+
+footer p{
+    color: var(--color-text-petit);
+    line-height: 20px;
+    font-size: small;
+    font-weight: 900;
+}
+
+.content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content h2{
+    color: #4b58be;
+    font-weight: 800;
+}
+
+.content h4{
+    font-weight: 900;
+}
+.content div ul{
+    list-style-type: none;
+}
+
+.content div ul li a{
+    color: var(--color-text-petit);
+    text-decoration: none;
+}
+
+.social-media{
+    display: block;
+    color: var(--color-text-petit);
+    text-align: center;
+}
+.social ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.social ul li{
+    margin-top: 3%;
+    margin-right: 2%;
+}
+
+#copyright{
+    text-align: center;
+}
+
+/* -------------------------Media------------------------- */
+@media(max-width: 575px){
+    footer{
+        text-align: center;
+        background-image: none;
+    }
+    .content{
+        display: block;
+    }
+    main{
+    margin-top: 5%;
+    margin: 2%;
+    background-size: 50%;
+    background-position-x: 85%;
+    height: 350px;
+}
+#Top-Plane, #Bottom-Plane{
+    display: none;
+}
+.container h1{
+    font-size: 1.5em;
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+.btn img{
+    display: none;
+}
+
+#section{
+    height: 1200px;
+}
+
+.four-card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rectangle-nt, .rectangle{
+    display: none;
+}
+ 
+}
+
+@media(max-width: 875px){
+    footer{
+        background-image: none;
+    }
+    main{
+    margin-top: 5%;
+    margin: 2%;
+    background-size: 45%;
+    background-position-x: 85%;
+    height: 350px;
+}
+#Top-Plane, #Bottom-Plane{
+    display: none;
+}
+.container h1{
+    font-size: 1.5em;
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+.btn img{
+    display: none;
+}
+#section{
+    height: 700px;
+}
+
+.four-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+ 
+}

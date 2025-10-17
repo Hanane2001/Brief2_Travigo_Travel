@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --second-color: black;
+    --color-Contact: #CB6C58;
+    --color-Cercle: #D5AEE4;
+    --color-text: #181E4B;
+    --color-text-petit: #5E6282;
+    --bg-color: white;
+    --color-back: #fff1da;
+}
+
+body{
+    width: 100%;
+}
+
+/* -------------------------Main------------------------- */
+main{
+    display: block;
+    justify-items: center;
+    justify-self: center;
+    background-color: var(--color-Contact); 
+    width: 30%;
+    margin-top: 2%;
+    padding: 10%;
+    height: 60%;
+    border-radius: 50px 0 50px 0;
+    color: var(--bg-color);
+}
+
+main form{
+    margin: 5%;
+    padding: 10%;
+    width: 300px;
+}
+
+main form input, button, a{
+    display: block;
+    /* align-items: center; */
+    margin-top: 8%;
+    padding: 2%;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--bg-color);
+}
+
+main form button{
+    width: 50%; 
+    justify-self: center;
+    color: var(--color-Contact);
+}
+
+main form button:hover{
+    background-color: var(--color-Contact);;
+    color: var(--bg-color);
+}
+
+main a{
+    text-decoration: none;
+    color: var(--bg-color);
+    text-align: center;
+    padding: 0;
+    border: 1px solid var(--color-Contact);
+}
+
+/* -------------------------Medai------------------------- */
+@media(max-width: 575px){
+    main{
+    display: block;
+    justify-items: center;
+    justify-self: center;
+    background-color: var(--color-Contact); 
+    width: 80%;
+    height: 60%;
+    margin-top: 2%;
+    border-radius: 50px 0 50px 0;
+    color: var(--bg-color);
+}
+}
+
+@media(max-width: 1020px){
+    main{
+    display: block;
+    justify-items: center;
+    justify-self: center;
+    background-color: var(--color-Contact); 
+    width: 50%;
+    height: 60%;
+    margin-top: 2%;
+    border-radius: 50px 0 50px 0;
+    color: var(--bg-color);
+}
+}
+
+@media(max-width: 530px){
+    main{
+    display: block;
+    justify-items: center;
+    justify-self: center;
+    background-color: var(--color-Contact); 
+    width: 80%;
+    height: 60%;
+    margin-top: 2%;
+    border-radius: 50px 0 50px 0;
+    color: var(--bg-color);
+}
+
+main form input, button, a{
+    width: 80%;
+    justify-self: center;
+}
+}
