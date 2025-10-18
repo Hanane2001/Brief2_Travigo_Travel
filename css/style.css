@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image: url(/img/Decore.png);
+    background-image: url(../img/Decore.png);
     background-position: right;
     background-repeat: no-repeat;
     background-position-y: top;
@@ -51,15 +51,26 @@ header div ul li a{
 
 header div ul li select{
     background-color: var(--color-back);
-    border: 1px solid var(--color-back);
+    border: none; 
     outline: none;
 }
 
 header div ul li select option{
-    background-color: var(--color-back);
-    border: 1px solid var(--color-back);
-
+    border: none;
 }
+
+.menu-toggle-checkbox {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--second-color);
+    padding: 0.5rem;
+}
+
 
 /* -------------------------Main------------------------- */
 main{
@@ -296,6 +307,41 @@ footer p{
 }
 
 /* -------------------------Media------------------------- */
+@media (max-width: 768px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    nav div ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        /*top: 100%;*/
+        right: 2%;
+        background-color: var(--bg-color);
+        padding: 1rem;
+        width: 60%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .menu-toggle-checkbox:checked + .menu-icon + nav div ul {
+        display: flex;
+    }
+    nav div ul .sign{
+    width: 30%;
+}
+    nav div ul li select{
+        background-color: var(--bg-color);
+    }
+}
+
 @media(max-width: 575px){
     footer{
         text-align: center;
