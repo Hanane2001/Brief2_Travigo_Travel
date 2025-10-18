@@ -76,7 +76,7 @@ header div ul li select option{
 main{
     margin-top: 5%;
     margin: 2%;
-    background-image: url(/img/Traveller\ 1.png);
+    background-image: url(../img/Traveller\ 1.png);
     background-repeat: no-repeat;
     background-size: 35%;
     background-position-x: 85%;
@@ -251,7 +251,7 @@ footer{
     display: block;
     text-align: left;
     line-height: 38px;
-    background-image: url(/img/Ellipse\ 10.png);
+    background-image: url(../img/Ellipse\ 10.png);
     background-repeat: no-repeat;
     background-size: 20%;
     background-position: right;

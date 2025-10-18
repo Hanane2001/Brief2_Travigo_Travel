@@ -16,7 +16,7 @@
 }
 
 body{
-    background-image: url(/img/Ellipse\ 10.png);
+    background-image: url(../img/Ellipse\ 10.png);
     background-repeat: no-repeat;
     background-size: 30%;
     background-position-y: -20%;
@@ -94,7 +94,7 @@ section div{
 }
 
 .txt_img div:last-child{
-    background-image: url(/img/Ellipse\ 10.png);
+    background-image: url(../img/Ellipse\ 10.png);
     background-repeat: no-repeat;
     background-position: 70%;
     background-position-y: bottom;
@@ -118,7 +118,7 @@ section div{
 }
 
 .img-txt div:first-child{
-    background-image: url(/img/Ellipse\ 10.png);
+    background-image: url(../img/Ellipse\ 10.png);
     background-repeat: no-repeat;
     background-position: 60%;
     background-position-y: bottom;
@@ -198,7 +198,7 @@ footer{
     display: block;
     text-align: left;
     line-height: 38px;
-    background-image: url(/img/Ellipse\ 10.png);
+    background-image: url(../img/Ellipse\ 10.png);
     background-repeat: no-repeat;
     background-size: 20%;
     background-position: right;
